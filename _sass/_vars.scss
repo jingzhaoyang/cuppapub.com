@@ -1,0 +1,83 @@
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+
+$base-font-size:      16px!default;
+$base-line-height:    24px!default;
+$base-font-weight:    300!default;
+$heading-font-weight: 400!default;
+
+$heading-font-family:"proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family:   "museo-slab",serif;
+
+// Default colour for objects’ borders etc.
+$base-ui-color:       #ccc!default;
+
+// Tell inuit.css when breakpoints start.
+$lap-start:           481px!default;
+$desk-start:          1024px!default;
+$desk-wide-start:     1200px!default;
+
+// Font sizes
+$giga-size:         96px!default;
+$mega-size:         72px!default;
+$kilo-size:         48px!default;
+
+$h1-size:           28px!default; // .alpha
+$h2-size:           24px!default; // .beta
+$h3-size:           22px!default; // .gamma
+
+$milli-size:        12px!default;
+$micro-size:        10px!default;
+
+// Color
+$brand-color:       #982900!default;
+$brand-face:        $base-font-family;
+
+// How big would you like round corners to be by default?
+$brand-round:        4px!default;
+
+// Spacing
+// inuit.css will work these next ones out for use within the framework.
+// Assign our `$base-line-height` to a new spacing var for more transparency.
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of inuit.css here.
+ */
+
+ $tiny-spacing-unit: $base-spacing-unit/4;
+
+// Grays
+// -------------------------
+
+$gray-darker:            #222;
+$gray-dark:              #333;
+$gray:                   #4d4d4d;
+$gray-light:             #aaa;
+$gray-lighter:           #ccc;
+
+// Redefine color for object borders, etc.
+$base-ui-color:          $gray-lighter;
+
+// Brand colors
+// -------------------------
+
+$brand-primary:          $brand-color;
+$brand-primary-dark:     #61452e;
+$brand-primary-light:    #D45B00;
+
+// Scaffolding
+// -------------------------
+
+$body-bg:               #fff;
+$text-color:            $gray;
+
+$link-color:            $brand-primary-light;
+$link-hover-color:      $brand-primary-dark;

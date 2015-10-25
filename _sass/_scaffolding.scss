@@ -1,0 +1,443 @@
+/*------------------------------------*\
+    $SCAFFOLDING
+\*------------------------------------*/
+
+.fp-enabled body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  &.fp-enabled {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+}
+
+*, .fp-section, :after, :before {
+  -webkit-box-sizing: border-box;
+}
+
+body, button, figure {
+  margin: 0;
+}
+
+h1, h2, h3, h4, ul {
+  margin-bottom: 10px;
+}
+
+.collapsing, .dropdown {
+  position: relative;
+}
+
+.btn, button {
+  cursor: pointer;
+}
+
+.btn, .pace {
+  -webkit-user-select: none;
+}
+
+.btn, .fp-tableCell {
+  vertical-align: middle;
+}
+
+@-webkit-keyframes pulse {
+  0%,100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+
+@-moz-keyframes pulse {
+  0%,100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           /*!
+* Bootstrap v3.3.5 (http://getbootstrap.com)
+* Copyright 2011-2015 Twitter, Inc.
+* Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+*/
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+}
+
+figcaption, figure, footer, header, nav, section {
+  display: block;
+}
+
+a {
+  &:active, &:hover {
+    outline: 0;
+  }
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 29px;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+input {
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  &[type=number] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type=search] {
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+@media print {
+  *, :after, :before {
+    background: 0 0 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a {
+    text-decoration: underline;
+    &:visited {
+      text-decoration: underline;
+    }
+    &[href]:after {
+      content: " (" attr(href) ")";
+    }
+    &[href^="#"]:after {
+      content: "";
+    }
+  }
+  h2, h3, p {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+  .navbar {
+    display: none;
+  }
+}
+
+.btn, .btn-danger.active, .btn-default.active, .btn-info.active, .btn-primary.active, .btn-success.active, .btn-warning.active, .navbar-toggle {
+  background-image: none;
+}
+
+.btn, .list-inline > li {
+  display: inline-block;
+}
+
+*, :after, :before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #fff;
+  background-color: #3e3d39;
+}
+
+a {
+  background-color: transparent;
+  color: #1eb4ed;
+  text-decoration: none;
+  &:focus, &:hover {
+    color: #0e84b0;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: $heading-font-family;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.btn {
+  font-weight: 400;
+}
+
+h4 small {
+  font-weight: 400;
+  line-height: 1;
+  color: #b6b5af;
+  font-size: 75%;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+small {
+  font-size: 85%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn, .text-center {
+  text-align: center;
+}
+
+ul {
+  margin-top: 0;
+}
+
+.btn, ul ul {
+  margin-bottom: 0;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  > li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.col-lg-8, .col-md-8 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-lg-8, .col-md-8 {
+  position: relative;
+  min-height: 1px;
+}
+
+@media (min-width: 992px) {
+  .col-md-8 {
+    float: left;
+    width: 66.66666667%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-8 {
+    float: left;
+    width: 66.66666667%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table > {
+  tbody > tr {
+    &.active > {
+      td, th {
+        background-color: #f5f5f5;
+      }
+    }
+    > {
+      td.active, th.active {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+  tfoot > tr {
+    &.active > {
+      td, th {
+        background-color: #f5f5f5;
+      }
+    }
+    > {
+      td.active, th.active {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+  thead > tr {
+    &.active > {
+      td, th {
+        background-color: #f5f5f5;
+      }
+    }
+    > {
+      td.active, th.active {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+
+.table-hover > tbody > tr {
+  &.active:hover > {
+    td, th {
+      background-color: #e8e8e8;
+    }
+  }
+  &:hover > .active {
+    background-color: #e8e8e8;
+  }
+  > {
+    td.active:hover, th.active:hover {
+      background-color: #e8e8e8;
+    }
+  }
+  &.success:hover > {
+    td, th {
+      background-color: #d0e9c6;
+    }
+  }
+  &:hover > .success {
+    background-color: #d0e9c6;
+  }
+  > {
+    td.success:hover, th.success:hover {
+      background-color: #d0e9c6;
+    }
+  }
+  &.info:hover > {
+    td, th {
+      background-color: #c4e3f3;
+    }
+  }
+  &:hover > .info {
+    background-color: #c4e3f3;
+  }
+  > {
+    td.info:hover, th.info:hover {
+      background-color: #c4e3f3;
+    }
+  }
+  &.warning:hover > {
+    td, th {
+      background-color: #faf2cc;
+    }
+  }
+  &:hover > .warning {
+    background-color: #faf2cc;
+  }
+  > {
+    td.warning:hover, th.warning:hover {
+      background-color: #faf2cc;
+    }
+  }
+  &.danger:hover > {
+    td, th {
+      background-color: #ebcccc;
+    }
+  }
+  &:hover > .danger {
+    background-color: #ebcccc;
+  }
+  > {
+    td.danger:hover, th.danger:hover {
+      background-color: #ebcccc;
+    }
+  }
+}

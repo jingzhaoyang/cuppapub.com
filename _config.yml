@@ -1,0 +1,58 @@
+# Site settings
+
+url: "http://cuppapub.com"
+urlimg: "/images/"
+title: "cuppapub"
+description: "Books for the modern writer"
+favicon: "favicon/favicon-32x32.png"
+authors: 
+  myronrodrigues:
+    name: Myron Rodrigues
+    web: http://myronrodrigues.com
+    twitter: rodriguesmyron
+
+pages_list:
+  About: 'about'
+  On Writing: 'onwriting'
+  On Design: 'ondesign'
+  Contact: 'contact'
+
+#  Variables
+paginate: 5
+
+paginate_path: "blog/page:num"
+
+sass:
+    sass_dir: _sass
+
+markdown: kramdown
+highlight: pygments
+excerpt_separator: "<!--more-->"
+permalink: /:categories/:title/
+
+# Social networks variables (many more available: facebook, flickr, dribbble, pinterest, instagram, tumblr etc.)
+social:
+  - title: "twitter"
+    url: "https://twitter.com/rodriguesmyron"
+  - title: "google-plus"
+    url: "https://plus.google.com/+PeterYuChuang/"
+
+# Serving
+detach:  false
+port:    2000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "less", "node_modules", "npm-debug.log"]
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: 
+  profile: false
+  ignore:
+    envs:
+
+gems:
+  - jekyll-redirect-from

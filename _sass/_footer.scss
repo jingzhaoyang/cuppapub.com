@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    FOOTER.SCSS
+\*------------------------------------*/
+
+footer {
+  padding-top: 50px;
+  font-size: 1pc;
+  background: #000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.footer-section {
+  a {
+    color: #fff77a;
+    &:hover {
+      color: #fff22e;
+    }
+  }
+  i {
+    color: #fff;
+  }
+}

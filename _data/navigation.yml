@@ -1,0 +1,17 @@
+- title: About
+  url: "about"
+
+- title: "On Writing"
+  url: "onwriting"
+  dropdown:
+  - title: "Book One"
+    url: "onwriting"
+
+- title: "On Design"
+  url: "ondesign"
+  dropdown:
+  - title: "Book One"
+    url: "ondesign"
+
+- title: "Contact"
+  url: "contact"
