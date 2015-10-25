@@ -2,4 +2,4 @@ _site
 node_modules
 assets/css/big
 npm-debug.log
-s3_website.yml
+_s3_website.yml
