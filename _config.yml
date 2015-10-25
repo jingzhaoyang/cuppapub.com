@@ -44,7 +44,7 @@ host:    127.0.0.1
 baseurl: "" # does not include hostname
 
 # Exclusion list from the generated _site
-exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "less", "node_modules", "npm-debug.log", "s3_website.yml"]
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "less", "node_modules", "npm-debug.log", "s3_website.yml", "gulpfile.js"]
 
 compress_html:
   clippings: all
